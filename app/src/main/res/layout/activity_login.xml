@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.first.pc_02.finalproject.Login">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bg"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/login_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/login_pw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp"
+        android:ems="10"
+        android:hint="아이디를 입력해주세요"
+        android:inputType="textPersonName"
+
+
+        android:textColorHint="#484848"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <EditText
+        android:id="@+id/login_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="패스워드를 입력해주세요"
+        android:inputType="textPersonName"
+        android:textColorHint="#484848"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/join"
+        android:layout_alignLeft="@+id/join"
+        android:layout_alignStart="@+id/join"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="LOGIN"
+        android:textColor="@color/colorAccent"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <Button
+        android:id="@+id/join"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="JOIN US!"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="378dp" />
+</RelativeLayout>

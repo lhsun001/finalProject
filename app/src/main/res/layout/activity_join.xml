@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.first.pc_02.finalproject.Join">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bg"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/join_id"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_above="@+id/join_pw"
+        android:layout_alignLeft="@+id/join_nick"
+        android:layout_alignStart="@+id/join_nick"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="아이디를 입력해주세요"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textColorHint="#484848"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <EditText
+        android:id="@+id/join_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/join_nick"
+        android:layout_alignLeft="@+id/join_nick"
+        android:layout_alignStart="@+id/join_nick"
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="패스워드를 입력해주세요"
+        android:inputType="textPersonName"
+        android:textColorHint="#484848"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <EditText
+        android:id="@+id/join_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/join_phone"
+        android:layout_alignLeft="@+id/join_phone"
+        android:layout_alignStart="@+id/join_phone"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="닉네임을 입력해주세요"
+        android:inputType="textPersonName"
+        android:textColorHint="#484848"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <EditText
+        android:id="@+id/join_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/join_birth"
+        android:layout_alignLeft="@+id/join_birth"
+        android:layout_alignStart="@+id/join_birth"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="번호를 입력해주세요"
+        android:inputType="textPersonName"
+        android:textColorHint="#484848"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <EditText
+        android:id="@+id/join_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignRight="@+id/button"
+        android:layout_marginBottom="31dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="생년월일을 입력해주세요"
+        android:inputType="textPersonName"
+        android:textColorHint="#484848"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="SIGN"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="414dp" />
+</RelativeLayout>
