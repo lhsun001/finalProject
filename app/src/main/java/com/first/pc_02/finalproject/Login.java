@@ -12,6 +12,7 @@ public class Login extends AppCompatActivity {
     EditText login_pw = null;
     Button login = null;
     Button join = null;
+    int i = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
